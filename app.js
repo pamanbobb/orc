@@ -10,7 +10,7 @@ var app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/login', login);
 app.use('/metu', metu);
@@ -18,6 +18,7 @@ app.use('/followuid', follow_uid);
 app.use('/dmuser', dm_user);
 app.use('/dmimg', dm_image);
 
+module.export = app;
 const port = process.env.PORT || 3000;
 app.listen(port, function(){
     console.log("RUN SUKSES");
