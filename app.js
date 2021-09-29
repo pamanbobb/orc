@@ -1,10 +1,10 @@
 var express = require('express');
 var path = require('path');
-var login= require('./routes/login');
-var metu = require('./routes/metu');
-var follow_uid = require('./routes/followuid');
-var dm_user = require('./routes/dmuser');
-var dm_image = require('./routes/dmimg');
+var login= require('./public/routes/login');
+var metu = require('./public/routes/metu');
+var follow_uid = require('./public/routes/followuid');
+var dm_user = require('./public/routes/dmuser');
+var dm_image = require('./public/routes/dmimg');
 
 var app = express();
 
