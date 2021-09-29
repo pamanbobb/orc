@@ -1,0 +1,19 @@
+{
+  "name": "nodeendpoint",
+  "version": "1.0.0",
+  "description": "NOde Endpoint Instagram",
+  "main": "app.js",
+  "dependencies": {
+    "@androz2091/insta.js": "^1.6.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "Pamanbob",
+  "license": "ISC",
+  "engines": {
+    "node": "14.x"
+  }
+}
