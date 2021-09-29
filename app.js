@@ -18,4 +18,7 @@ app.use('/followuid', follow_uid);
 app.use('/dmuser', dm_user);
 app.use('/dmimg', dm_image);
 
-module.exports = app;
+const port = process.env.PORT || 3000;
+app.listen(port, function(){
+    console.log("RUN SUKSES");
+})
